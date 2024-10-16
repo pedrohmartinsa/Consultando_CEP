@@ -20,7 +20,7 @@ function Cep() {
                     setEndereco(enderecoAntigo => {
                         return {
                             ...enderecoAntigo,
-                            rua: dados.rua,
+                            rua: dados.logradouro,
                             bairro: dados.bairro,
                             cidade: dados.localidade,
                             uf: dados.uf,
@@ -42,7 +42,7 @@ function Cep() {
                     <li>Bairro: {endereco.bairro}</li>
                     <li>Cidade: {endereco.cidade}</li>
                     <li>UF: {endereco.uf}</li>
-                </ul>      
+                </ul>
             </div>
         </>
     );

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import Home from './pages/Home.jsx'
 import Cep from './pages/Cep.jsx'
+import Naruto from './pages/Naruto.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
 
     children: [
       {index: true, element: <Home/>},
-      {path: 'cep', element: <Cep/>}
+      {path: 'cep', element: <Cep/>},
+      {path: 'naruto', element: <Naruto/>}
     ]
   }]
 )
