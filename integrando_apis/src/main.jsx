@@ -8,6 +8,7 @@ import Cep from './pages/Cep.jsx'
 import Movies from './pages/Movies.jsx'
 import TopRated from './pages/TopRated.jsx'
 import { Navigate } from 'react-router-dom'
+import Populares from './pages/Populares.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
       {path: 'cep', element: <Cep/>},
       {path: 'movies', element: <Movies/>, children: [
         {index: true, element: <Navigate to='top_rated'/>},
-        {path: 'top_rated', element: <TopRated/>}
+        {path: 'top_rated', element: <TopRated/>},
+        {path: 'populares', element: <Populares/>}
       ]}
     ]
   }]

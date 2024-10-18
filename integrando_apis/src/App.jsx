@@ -3,19 +3,19 @@ import Nav from "./components/Nav"
 
 
 function App() {
-  
+
   return (
     <>
 
     <div className="flex items-center justify-center h-screen">
-      <div className="relative flex flex-col justify-center items-center border-2 border-black h-[95%] w-[95%] p-4">
+      <d iv className="relative flex flex-col justify-center items-center border-2 border-black h-[95%] w-[95%] p-4">
           <div className="absolute top-7 border-b-2 border-black w-full pb-5">
             <Nav/>
           </div>
-          <div className=" h-[95%] w-[95%]">
+          <div className="overflow-auto mt-20">
             <Outlet/>
           </div>
-      </div>
+      </d>
     </div>
       
     </>
