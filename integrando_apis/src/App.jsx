@@ -7,12 +7,14 @@ function App() {
   return (
     <>
 
-    <div className="h-screen">
-      <div className="relative flex justify-center items-center border-2 border-black h-[95%] m-4 p-4">
+    <div className="flex items-center justify-center h-screen">
+      <div className="relative flex flex-col justify-center items-center border-2 border-black h-[95%] w-[95%] p-4">
           <div className="absolute top-7 border-b-2 border-black w-full pb-5">
             <Nav/>
           </div>
-          <Outlet/>
+          <div className=" h-[95%] w-[95%]">
+            <Outlet/>
+          </div>
       </div>
     </div>
       

@@ -5,7 +5,9 @@ import App from './App.jsx'
 import './index.css'
 import Home from './pages/Home.jsx'
 import Cep from './pages/Cep.jsx'
-import Naruto from './pages/Naruto.jsx'
+import Movies from './pages/Movies.jsx'
+import TopRated from './pages/TopRated.jsx'
+import { Navigate } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,10 @@ const router = createBrowserRouter([
     children: [
       {index: true, element: <Home/>},
       {path: 'cep', element: <Cep/>},
-      {path: 'naruto', element: <Naruto/>}
+      {path: 'movies', element: <Movies/>, children: [
+        {index: true, element: <Navigate to='top_rated'/>},
+        {path: 'top_rated', element: <TopRated/>}
+      ]}
     ]
   }]
 )
