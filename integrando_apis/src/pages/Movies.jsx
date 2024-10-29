@@ -8,9 +8,8 @@ export default function Movies() {
             <div className="fixed top-[5.688rem]">
                 <NavLink to='top_rated'>Melhores Avaliados</NavLink>
                 <NavLink to='populares'>Mais Populares</NavLink>
-                
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-wrap justify-between">
                 <Outlet/>
             </div>
         </div>

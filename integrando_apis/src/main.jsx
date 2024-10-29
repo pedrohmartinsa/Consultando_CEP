@@ -9,6 +9,7 @@ import Movies from './pages/Movies.jsx'
 import TopRated from './pages/TopRated.jsx'
 import { Navigate } from 'react-router-dom'
 import Populares from './pages/Populares.jsx'
+import DetailMoviePage from './pages/DetailMoviePage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
         {index: true, element: <Navigate to='top_rated'/>},
         {path: 'top_rated', element: <TopRated/>},
         {path: 'populares', element: <Populares/>}
-      ]}
+      ]},
+      {path: 'movies/:id', element: <DetailMoviePage/>}
     ]
   }]
 )
